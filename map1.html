@@ -3,39 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Earthquakes in Japan</title>
+    <title>Choropleth map of the US Counties Covid-19 Cases</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/map1.css"/>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 
 <body>
     <div id="map"></div>
-    <script>
-        mapboxgl.accessToken =
-            'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
-        let map = new mapboxgl.Map({
-            container: 'map', // container ID
-            style: 'mapbox://styles/mapbox/dark-v10',
-            zoom: 5, // starting zoom
-            minZoom: 4, // minimum zoom level of the map
-            center: [138, 38] // starting center
-        });
-    </script>
-
+    <div id="legend"></div>
+    <div id="title">US Counties Covid-19 Cases </div>
+    <script src="js/map1.js"></script>
 </body>
 
 </html>
