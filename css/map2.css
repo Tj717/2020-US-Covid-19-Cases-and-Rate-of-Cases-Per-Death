@@ -53,19 +53,27 @@ a {
     color: black
 }
 
-#title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25pt;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 3px rgb(0, 119, 255);
-} 
-
 span.dot-label {
     font-size: 12px;
     margin-top: 6px;
 }
+
+#wrapper {
+    width: 750px;
+    height: 100px;
+    opacity: 70%;
+    background-color: rgb(101, 255, 214);
+    margin: 10px;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: rgb(0, 9, 111);
+    text-align: center;
+} 

@@ -4,8 +4,8 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/light-v10', // style URL
-        zoom: 4, // starting zoom
-        center: [-100, 40] // starting center
+        zoom: 3.8, // starting zoom
+        center: [-98, 39] // starting center
     }
 );
 
@@ -73,7 +73,7 @@ async function geojsonFetch() {
 
         // create legend
         const legend = document.getElementById('legend');
-        legend.innerHTML = "<b> Covid Cases per Death in Each County: </b><br><br>";
+        legend.innerHTML = "<b>Cases per Death: </b><br><br>";
 
         layers.forEach((layer, i) => {
             const color = colors[i];

@@ -1,21 +1,17 @@
 mapboxgl.accessToken =
     'pk.eyJ1IjoidGoyMDIyMjIiLCJhIjoiY2xhMWk3dTdoMDAyczNubmM4cW5wcjczaCJ9._xPR8eZ1wQpDOCkm7f-vEg';
 
-const map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/dark-v10', // style URL
-        zoom: 4, // starting zoom
-        center: [-100, 40] // starting center
+        zoom: 3.8, // starting zoom
+        center: [-98, 39] // starting center
     }
 );
 
 const grades = [10, 100, 1000, 10000, 100000],
     colors = ['rgb(0, 0, 255)', 'rgb(0, 255, 0)', 'rgb(255, 255, 0)', 'rgb(255, 0, 0)', 'rgb(128, 0, 128)'];
     radii = [1, 3, 6, 10, 15];
-
-// const grades = [10, 100, 1000],
-//     colors = ['rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0)'];
-//     radii = [2, 4, 8];
 
 async function geojsonFetch() { 
     let response = await fetch('assets/us-covid-2020-counts.geojson');
