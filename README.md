@@ -1,8 +1,8 @@
 # 2020 US Covid-19 Cases and Rate of Cases-Per-Death
 
 ## This repository contains the code for the following two maps:
--  **Proportional Symbol Map of US Covid-19 Cases per County:** [here](https://tj717.github.io/US-Covid-19-Rates-and-Cases/map2.html)
--  **Choropleth Map of US Covid-19 Cases per Death in each County:** [here](https://tj717.github.io/US-Covid-19-Rates-and-Cases/map1.html).
+-  **Proportional Symbol Map of US Covid-19 Cases per County:** [here](https://tj717.github.io/2020-US-Covid-19-Cases-and-Rate-of-Cases-Per-Death/map2.html)
+-  **Choropleth Map of US Covid-19 Cases per Death in each County:** [here](https://tj717.github.io/2020-US-Covid-19-Cases-and-Rate-of-Cases-Per-Death/map1.html).
 
 #### This project aims to visualize Covid-19's impact on 2020 America and highlight the county differences. From the maps, we can see the east and west coast are under the most impact and has the highest number of cases compared to the rest of America.
 ![Map of US Covid-19 Cases per County](img/cases.png)
