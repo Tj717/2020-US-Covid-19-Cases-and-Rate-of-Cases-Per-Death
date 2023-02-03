@@ -23,13 +23,13 @@ async function geojsonFetch() {
         });
         
         map.addLayer({
-            'id': 'covid_rates',
+            'id': 'covid_rates_layer',
             'type': 'fill',
             'source': 'covid_rates',
             'paint': {
                 'fill-color': [
                     'step',
-                    ['get', 'cases'],
+                    ['get', 'rates'],
                     '#ff3333',
                     30,        
                     '#ffcc33',   
@@ -92,7 +92,7 @@ async function geojsonFetch() {
         
     map.on('mousemove', ({point}) => {
         const counties = map.queryRenderedFeatures(point, {
-            layers: ['covid_rates']
+            layers: ['covid_rates_layer']
         });
         let rate = Math.floor(counties[0].properties.rates);
         document.getElementById('text-description').innerHTML = counties.length ?

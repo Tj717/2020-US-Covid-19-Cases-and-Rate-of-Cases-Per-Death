@@ -1,16 +1,3 @@
-h2, h3 {
-    margin: 10px;
-    font-size: 18px;
-}
-
-h3 {
-    font-size: 16px;
-}
-
-p {
-    margin: 10px;
-}
-
 #map {
     position: absolute;
     top: 0;
@@ -49,7 +36,7 @@ p {
     line-height: 18px;
     height: 210px;
     margin-bottom: 30px;
-    width: 200px;
+    width: 130px;
     font-size: 13px;
 }
 
@@ -66,56 +53,11 @@ p {
     cursor: unset;
 }
 
-/* the layout of the legend panel */
-#legend {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 110px;
-    background: #fff;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    padding: 10px 20px 10px 10px;
-    border-radius: 3px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+h2, h3, p {
+    margin: 10px;
+    font-size: 20px;
 }
 
-/* each line for a break */
-.break {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+h2 {
+    text-shadow: 1px 1px 2px rgb(181, 246, 255);
 }
-
-/* basic style for a dot/circle */
-.dot {
-    display: inline-block;
-    margin-top: 5px;
-    border-radius: 50%;
-    opacity: 0.6;
-}
-
-/* the label for the dot */
-.dot-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-style: italic;
-}
-
-/* the text color of a hyper link */
-a {
-    color: black
-}
-
-#title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25pt;
-    color: white
-} 
