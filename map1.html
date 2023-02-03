@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Choropleth map of the US Counties Covid-19 Cases</title>
+    <title>Choropleth map of the US Counties Covid-19 Rates</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
@@ -13,8 +13,13 @@
 
 <body>
     <div id="map"></div>
-    <div id="legend"></div>
-    <div id="title">US Counties Covid-19 Cases </div>
+    <div class='map-overlay' id='features'>
+        <h2>US Counties Covid-19 Cases per Death</h2>
+        <div id='text-description'>
+            <p>Hover over a county</p>
+        </div>
+    </div>
+    <div class='map-overlay' id='legend'></div>
     <script src="js/map1.js"></script>
 </body>
 

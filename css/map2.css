@@ -61,17 +61,11 @@ a {
     margin-left: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 25pt;
-    color: white
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(0, 119, 255);
+} 
+
+span.dot-label {
+    font-size: 12px;
+    margin-top: 6px;
 }
-
-
-/* #subtitle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 70px;
-    margin-left: 190px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15pt;
-    color: white
-} */
