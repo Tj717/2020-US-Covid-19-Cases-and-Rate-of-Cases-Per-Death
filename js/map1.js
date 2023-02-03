@@ -16,6 +16,7 @@ async function geojsonFetch() {
     }
     let rates = await response.json();
 
+    map.setProjection({name: 'albers'});
     map.on('load', function loadingData() {
         map.addSource('covid_rates', {
             type: 'geojson',

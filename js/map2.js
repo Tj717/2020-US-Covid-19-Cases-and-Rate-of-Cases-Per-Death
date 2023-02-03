@@ -19,7 +19,7 @@ async function geojsonFetch() {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
     let cases = await response.json();
-
+    map.setProjection({name: 'albers'});
     map.on('load', () => { 
         map.addSource('covid-cases', {
             type: 'geojson',
