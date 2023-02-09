@@ -4,7 +4,7 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/light-v10', // style URL
-        zoom: 3.8, // starting zoom
+        zoom: 6, // starting zoom
         center: [-98, 39] // starting center
     }
 );
@@ -90,15 +90,23 @@ async function geojsonFetch() {
             legend.appendChild(item);
         });
     });
-        
+
     map.on('mousemove', ({point}) => {
         const counties = map.queryRenderedFeatures(point, {
             layers: ['covid_rates_layer']
         });
-        let rate = Math.floor(counties[0].properties.rates);
-        document.getElementById('text-description').innerHTML = counties.length ?
-            `<h3>${counties[0].properties.county}, ${counties[0].properties.state}: </h3><p><strong><em>${rate}</strong> cases  per death.</em></p>` :
-            `<p>Hover over a County</p>`;
+
+        let content = '';
+
+        if (counties.length) {
+            let rate = Math.floor(counties[0].properties.rates);
+            content = 
+            `<h3>${counties[0].properties.county}, ${counties[0].properties.state}: </h3><p><strong><em>${rate}</strong> cases  per death.</em></p>`;
+        } else {
+            content = "<p>Hover over a County</p>";
+        }
+
+        document.getElementById('text-description').innerHTML = content;
     });
 }
 
