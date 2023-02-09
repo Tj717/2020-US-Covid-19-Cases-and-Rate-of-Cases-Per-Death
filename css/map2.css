@@ -77,3 +77,26 @@ span.dot-label {
     color: rgb(0, 9, 111);
     text-align: center;
 } 
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    color: rgb(8, 0, 227);
+    text-align: center;
+}
+
+h3 em {
+    color: rgb(0, 130, 32);
+    font-style: normal; 
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    color: rgb(14, 0, 0);
+    text-align: center;
+}
+
+strong {
+    color:rgb(255, 0, 0)
+}

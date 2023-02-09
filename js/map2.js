@@ -61,7 +61,8 @@ async function geojsonFetch() {
         map.on('click', 'cases-points', (event) => {
             new mapboxgl.Popup()
                 .setLngLat(event.features[0].geometry.coordinates)
-                .setHTML(`<strong>Cases:</strong> ${event.features[0].properties.cases}`)
+                .setHTML(`<h3 >${event.features[0].properties.county}, <em> ${event.features[0].properties.state}: </em></h3>
+                <p><strong>Cases:</strong> ${event.features[0].properties.cases}</p>`)
                 .addTo(map);
         });
     });
